@@ -1,0 +1,46 @@
+.tree-animation {
+  animation: drawTree 2s ease-in-out;
+}
+
+.seed-animation {
+  animation: dropSeed 1.5s ease-in-out infinite;
+}
+
+.soil-animation {
+  animation: growSoil 2s ease-in-out;
+}
+
+@keyframes drawTree {
+  from {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dropSeed {
+  0% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes growSoil {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

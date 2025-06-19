@@ -1,0 +1,228 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset dark mode behavior */
+:root {
+  color-scheme: light;
+  background-color: #ffffff;
+}
+
+/* span, p {
+    color: black;
+} */
+
+button>span, button>p {
+    color: white;
+}
+
+.text-green-600 {
+    color: var(--color-green-600) !important;
+}
+
+.text-green-700 {
+    color: var(--color-green-700) !important;
+}
+
+.bg-green-400, .bg-green-500, .bg-green-600, .bg-green-700 {
+    color: white !important;
+}
+
+input {
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+/* Standardized form elements */
+input:not([type="file"]),
+textarea,
+select {
+  color: #1a1a1a !important;
+  border: 1px solid #22c55e !important; /* green-500 */
+  background-color: white !important;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #1a1a1a;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.1); /* green-500 with opacity */
+}
+
+/* Image upload/draggable area */
+.drag-drop-zone {
+  border: 2px dashed #22c55e !important;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.drag-drop-zone:hover,
+.drag-drop-zone:focus {
+  border-color: #1a1a1a;
+  background-color: rgba(34, 197, 94, 0.05);
+}
+
+/* Fix text visibility issues */
+.text-white {
+  color: white !important;
+}
+
+/* [class*="bg-white"] *,
+[class*="bg-gray-50"] *,
+[class*="bg-green-50"] * {
+  color: #1a1a1a;
+} */
+
+/* Ensure proper contrast for different backgrounds */
+/* .bg-white,
+.bg-gray-50,
+.bg-green-50 {
+  color: #1a1a1a;
+} */
+
+/* Override Tailwind text colors for better visibility */
+.text-gray-500,
+.text-gray-600,
+.text-gray-700,
+.text-gray-800 {
+  color: #4b5563 !important;
+}
+
+/* Ensure form labels are visible */
+label {
+  color: #374151 !important; /* gray-700 */
+  font-weight: 500;
+}
+
+/* Fix mobile text contrast */
+@media (max-width: 768px) {
+  body {
+    background-color: #ffffff;
+  }
+  
+  /* Ensure text is visible on mobile */
+  /* p, span, h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a;
+  } */
+  
+  /* Exception for buttons and colored backgrounds */
+  /* [class*="bg-green-"] p,
+  [class*="bg-green-"] span,
+  button[class*="bg-green-"] {
+    color: white;
+  } */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Add this to your CSS file or as a style tag in your component */
+.calendar-swiper .swiper-button-next,
+.calendar-swiper .swiper-button-prev {
+    color: #15803d; /* green-700 */
+    width: 35px;
+    height: 35px;
+}
+
+.calendar-swiper .swiper-button-next:after,
+.calendar-swiper .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.calendar-swiper .swiper-button-disabled {
+    opacity: 0.35;
+}
+
+.calendar-swiper {
+    touch-action: pan-y pinch-zoom;
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.calendar-swiper .swiper-wrapper {
+    height: auto !important;
+}
+
+.calendar-swiper .swiper-slide {
+    height: auto !important;
+    padding: 1rem 0;
+    touch-action: pan-y;
+}
+
+.calendar-swiper .swiper-button-next,
+.calendar-swiper .swiper-button-prev {
+    margin-top: -1.5rem;
+    user-select: none;
+    pointer-events: auto;
+}
+
+/* Add to your global CSS or component styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost:5173", "https://treedoctor-4a98b.web.app", "https://treedoctor.app"],
+    "method": ["GET", "POST", "PUT", "OPTIONS"],
+    "maxAgeSeconds": 3600,
+    "responseHeader": ["Content-Type", "Authorization"]
+  }
+]
