@@ -6,7 +6,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "treedoctor-ui/dist",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
