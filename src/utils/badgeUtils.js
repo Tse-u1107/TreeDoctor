@@ -1,5 +1,5 @@
 import { collection, getDocs, setDoc, doc } from 'firebase/firestore';
-import { db } from '../../../firebase';
+import { db } from '../../firebase';
 import { badgeCategories } from '../config/badges';
 
 export const checkAndAwardBadges = async (userId, trees) => {

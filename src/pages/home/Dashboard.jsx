@@ -18,7 +18,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import { collection, getDocs } from '@firebase/firestore';
-import { db } from '../../../../firebase';
+import { db } from '../../../firebase';
 import { getAuth } from 'firebase/auth';
 import { useAuth } from '../../context/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';

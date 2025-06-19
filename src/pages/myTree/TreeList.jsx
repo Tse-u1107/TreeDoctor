@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { doc, setDoc, collection, getDocs } from 'firebase/firestore';
-import { db } from '../../../../firebase';
+import { db } from '../../../firebase';
 import { FaTree, FaSeedling, FaLeaf, FaHeart, FaStar } from 'react-icons/fa';
 import { 
     faRuler, 

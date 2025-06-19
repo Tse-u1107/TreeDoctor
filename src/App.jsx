@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 // firestore 
 import { collection, getDocs } from 'firebase/firestore'; // Import Firestore functions
-import { db } from '../firebase'; // Import the initialized db instance
+import { db } from '../firebase.js';
 
 
 import './App.css'

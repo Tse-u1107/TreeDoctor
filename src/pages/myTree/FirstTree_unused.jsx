@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../../context/AuthContext';
-import { db, storage } from '../../../../firebase';
+import { db, storage } from '../../../firebase';
 import { collection, doc, getDoc, setDoc, Timestamp, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { FaSeedling } from 'react-icons/fa';

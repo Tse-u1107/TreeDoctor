@@ -10,10 +10,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import ProtectedRoute from '../../components/ProtectedRoute';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../../../../firebase';
+import { db } from '../../../firebase';
 import { getAuth } from '@firebase/auth';
 import { useAuth } from '../../context/AuthContext';
-// import { db } from '../../firebase'; // Adjust the import based on your file structure
+// import { db } from '../firebase'; // Adjust the import based on your file structure
 
 const DAYS_OF_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
